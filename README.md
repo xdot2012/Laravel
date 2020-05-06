@@ -107,3 +107,19 @@ php artisan serve
 laravel new <nome_do_projeto>
 ```
 
+Basic Scaffolding<br />
+```
+composer require laravel/ui
+```
+
+add Vue.js<br />
+```
+php artisan ui vue
+```
+
+build Vue Components<br />
+```
+npm run dev
+ou
+npm run watch
+```
