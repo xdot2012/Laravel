@@ -123,3 +123,23 @@ npm run dev
 ou
 npm run watch
 ```
+
+Create a New Controller<br />
+```
+php artisan make:controller <NameOfTheController> --resource
+```
+
+Create a CRUD Controller<br />
+```
+php artisan make:controller <NameOfTheController>
+```
+
+Create a Model/Migration<br />
+```
+php artisan make:model <ModelName> -m
+```
+
+Show all App Routes<br />
+```
+php artisan route:list
+```

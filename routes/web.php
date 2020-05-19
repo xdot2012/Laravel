@@ -20,3 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Create an Intere CRUD
+Route::resource('example', 'ExamplesController');
