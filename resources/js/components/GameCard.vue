@@ -9,7 +9,8 @@
     class="card"
     :style="{ transform: transformString }"
   >
-    <h3 class="cardTitle">{{ card }}</h3>
+    <h3 class="cardTitle">{{ card.name }}</h3>
+    <h3 class="cardNumber">{{ card.number }}</h3>
   </div>
 </template>
 
@@ -30,7 +31,7 @@ export default {
 
   props: {
     card: {
-      type: String,
+      type: Object,
       required: true
     },
     isCurrent: {
@@ -182,17 +183,10 @@ $fs-card-title: 1.125em;
   @include sizing(100% 80vw);
   @include flex-center();
 
-  @include after() {
-    @include sizing(21px 3px);
-    @include absolute(right 0 bottom 11px left 0);
-
-    margin: auto;
-    border-radius: 100px;
-    background: rgba($c-black, 0.3);
-  }
-
   display: flex;
-  max-height: 350px;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 400px;
   margin: auto;
   font-size: $fs-h2;
   font-weight: $fw-bold;
@@ -222,8 +216,12 @@ $fs-card-title: 1.125em;
 }
 
 .cardTitle {
-  margin: 0 0 15px;
+  margin: 50% 0 15px;
   font-size: $fs-card-title;
+}
+
+.cardNumber {
+  margin: 0 0 5%;
 }
 
 @for $i from 1 through $cardsTotal {
@@ -237,11 +235,11 @@ $fs-card-title: 1.125em;
     transform: translateY($translation) scale($scale);
 
     @if $i == 3 {
-      color: $c-red-25;
-      background-color: $c-red-25;
+      color: $c-back-25;
+      background-color: $c-back-25;
     } @else if $i == 2 {
-      color: $c-red-50;
-      background-color: $c-red-50;
+      color: $c-back-50;
+      background-color: $c-back-50;
     }
 
     @if $i != 1 {

@@ -2,7 +2,7 @@
   <div class="cards">
     <GameCard
       v-for="(card, index) in cards"
-      :key="card"
+      :key="card.number"
       :card="card"
       :is-current="index === 0"
       @cardAccepted="$emit('cardAccepted');"

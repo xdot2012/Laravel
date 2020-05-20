@@ -1929,7 +1929,16 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      visibleCards: ["Test", "Vue.js", "Webpack", "Test", "Vue.js", "Webpack", "Test", "Vue.js", "Webpack"]
+      visibleCards: [{
+        "name": "Exemplo de Pergunta?",
+        "number": "1"
+      }, {
+        "name": "Exemplo de Pergunta?",
+        "number": "2"
+      }, {
+        "name": "Exemplo de Pergunta?",
+        "number": "3"
+      }]
     };
   },
   methods: {
@@ -1976,6 +1985,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 var ACCEPT_CARD = "cardAccepted";
 var REJECT_CARD = "cardRejected";
@@ -1990,7 +2000,7 @@ var SKIP_CARD = "cardSkipped";
   },
   props: {
     card: {
-      type: String,
+      type: Object,
       required: true
     },
     isCurrent: {
@@ -6717,7 +6727,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "#app {\n  font-family: \"Avenir\", Helvetica, Arial, sans-serif;\n  text-align: center;\n}", ""]);
+exports.push([module.i, "#app {\n  font-family: \"Avenir\", Helvetica, Arial, sans-serif;\n  text-align: center;\n  display: flex;\n  justify-content: center;\n}", ""]);
 
 // exports
 
@@ -6736,7 +6746,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".card[data-v-22f2268d] {\n  border-radius: 15px;\n  box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.05);\n  position: absolute;\n  width: 100%;\n  height: 80vw;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  display: flex;\n  max-height: 350px;\n  margin: auto;\n  font-size: rem(24px);\n  font-weight: 700;\n  color: #fff;\n  background-image: linear-gradient(-180deg, #d94e47 2%, #df1165 100%);\n  opacity: 0;\n  transform: translateY(9.9vh) scale(0.76);\n  transform-origin: 50%, 100%;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  pointer-events: none;\n  will-change: transform, opacity;\n  height: 100vw;\n}\n.card[data-v-22f2268d]::after {\n  content: \"\";\n  width: 21px;\n  height: 3px;\n  left: 0;\n  bottom: 11px;\n  right: 0;\n  position: absolute;\n  margin: auto;\n  border-radius: 100px;\n  background: rgba(0, 0, 0, 0.3);\n}\n.card.isCurrent[data-v-22f2268d] {\n  pointer-events: auto;\n}\n.card.isAnimating[data-v-22f2268d] {\n  transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);\n}\n.cardTitle[data-v-22f2268d] {\n  margin: 0 0 15px;\n  font-size: 1.125em;\n}\n.card[data-v-22f2268d]:nth-child(1) {\n  z-index: 3;\n  opacity: 1;\n  transform: translateY(0vh) scale(1);\n}\n.card[data-v-22f2268d]:nth-child(2) {\n  z-index: 2;\n  opacity: 1;\n  transform: translateY(3.3vh) scale(0.92);\n  color: #73345e;\n  background-color: #73345e;\n  background-image: none;\n}\n.card[data-v-22f2268d]:nth-child(2)::after {\n  content: \"\";\n  width: 0;\n  height: 0;\n}\n.card[data-v-22f2268d]:nth-child(3) {\n  z-index: 1;\n  opacity: 1;\n  transform: translateY(6.6vh) scale(0.84);\n  color: #432958;\n  background-color: #432958;\n  background-image: none;\n}\n.card[data-v-22f2268d]:nth-child(3)::after {\n  content: \"\";\n  width: 0;\n  height: 0;\n}", ""]);
+exports.push([module.i, ".card[data-v-22f2268d] {\n  border-radius: 15px;\n  box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.05);\n  position: absolute;\n  width: 100%;\n  height: 80vw;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  max-height: 400px;\n  margin: auto;\n  font-size: rem(24px);\n  font-weight: 700;\n  color: #fff;\n  background-image: linear-gradient(-180deg, #479fd9 2%, #6711df 100%);\n  opacity: 0;\n  transform: translateY(9.9vh) scale(0.76);\n  transform-origin: 50%, 100%;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  pointer-events: none;\n  will-change: transform, opacity;\n  height: 100vw;\n}\n.card.isCurrent[data-v-22f2268d] {\n  pointer-events: auto;\n}\n.card.isAnimating[data-v-22f2268d] {\n  transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);\n}\n.cardTitle[data-v-22f2268d] {\n  margin: 50% 0 15px;\n  font-size: 1.125em;\n}\n.cardNumber[data-v-22f2268d] {\n  margin: 0 0 5%;\n}\n.card[data-v-22f2268d]:nth-child(1) {\n  z-index: 3;\n  opacity: 1;\n  transform: translateY(0vh) scale(1);\n}\n.card[data-v-22f2268d]:nth-child(2) {\n  z-index: 2;\n  opacity: 1;\n  transform: translateY(3.3vh) scale(0.92);\n  color: #4c258b;\n  background-color: #4c258b;\n  background-image: none;\n}\n.card[data-v-22f2268d]:nth-child(2)::after {\n  content: \"\";\n  width: 0;\n  height: 0;\n}\n.card[data-v-22f2268d]:nth-child(3) {\n  z-index: 1;\n  opacity: 1;\n  transform: translateY(6.6vh) scale(0.84);\n  color: #170c3d;\n  background-color: #170c3d;\n  background-image: none;\n}\n.card[data-v-22f2268d]:nth-child(3)::after {\n  content: \"\";\n  width: 0;\n  height: 0;\n}", ""]);
 
 // exports
 
@@ -44593,7 +44603,15 @@ var render = function() {
           },
           style: { transform: _vm.transformString }
         },
-        [_c("h3", { staticClass: "cardTitle" }, [_vm._v(_vm._s(_vm.card))])]
+        [
+          _c("h3", { staticClass: "cardTitle" }, [
+            _vm._v(_vm._s(_vm.card.name))
+          ]),
+          _vm._v(" "),
+          _c("h3", { staticClass: "cardNumber" }, [
+            _vm._v(_vm._s(_vm.card.number))
+          ])
+        ]
       )
     : _vm._e()
 }
@@ -44624,7 +44642,7 @@ var render = function() {
     { staticClass: "cards" },
     _vm._l(_vm.cards, function(card, index) {
       return _c("GameCard", {
-        key: card,
+        key: card.number,
         attrs: { card: card, "is-current": index === 0 },
         on: {
           cardAccepted: function($event) {

@@ -10882,3 +10882,7 @@ a.text-dark:focus {
   }
 }
 
+.card-container {
+  background-color: #3f3e3e;
+}
+

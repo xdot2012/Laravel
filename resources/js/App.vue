@@ -21,7 +21,16 @@ export default {
 
   data() {
     return {
-      visibleCards: ["Test", "Vue.js", "Webpack", "Test", "Vue.js", "Webpack", "Test", "Vue.js", "Webpack"]
+      visibleCards: [{
+      "name":"Exemplo de Pergunta?",
+      "number": "1"
+      }, {
+      "name":"Exemplo de Pergunta?",
+      "number": "2"
+    }, {
+      "name":"Exemplo de Pergunta?",
+      "number": "3"
+    }]
     };
   },
 
@@ -48,5 +57,7 @@ export default {
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 </style>

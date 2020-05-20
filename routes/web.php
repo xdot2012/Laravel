@@ -21,5 +21,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-// Create an Intere CRUD
+// Create an Entire CRUD
 Route::resource('example', 'ExamplesController');

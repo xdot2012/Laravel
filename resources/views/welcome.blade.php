@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="crsf-token" content="{{ csrf_token() }}">
-        <script> window.Laravel="{ crsfToken: '{{ csrf_token() }}'}"> </script>
+        <script> window.Laravel="{ crsfToken: '{{ csrf_token() }}'}" </script>
         <title>My app</title>
 
         <!-- Fonts -->
@@ -13,11 +13,11 @@
     </head>
     <body>
         <div id="app">
-            <div class="container">
+            <div class="container"> 
                 <example-component />
             </div>
         </div>
-
-        <script src="{{ asset('js/app.js') }}" ></script>
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
+
