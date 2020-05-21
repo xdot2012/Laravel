@@ -143,3 +143,5 @@ Show all App Routes<br />
 ```
 php artisan route:list
 ```
+//https://garywoodfine.com/how-to-add-vuetify-to-laravel-project/
+https://www.youtube.com/watch?v=VaI9tV8GQFk

@@ -1,5 +1,6 @@
 <template>
-  <div id="app">
+  <v-app>
+    <v-btn color="primary">Button</v-btn>
 		<GameCardsStack
 			:cards="visibleCards"
 			@cardAccepted="handleCardAccepted"
@@ -7,7 +8,7 @@
 			@cardSkipped="handleCardSkipped"
 			@hideCard="removeCardFromDeck"
 		/>
-  </div>
+  </v-app>
 </template>
 
 <script>

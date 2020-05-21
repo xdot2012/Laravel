@@ -5,8 +5,9 @@
  */
 
 require('./bootstrap');
-
 window.Vue = require('vue');
+
+import Vuetify from '../plugins/vuetify';
 
 /**
  * The following block of code may be used to automatically register your
@@ -30,4 +31,5 @@ Vue.component('example-component', require('./App.vue').default);
 
 const app = new Vue({
     el: '#app',
+    vuetify: Vuetify,
 });
